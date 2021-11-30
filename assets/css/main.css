@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0px;
+    margin:0px;
+    list-style: none;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 1240px;
+}
+
+/* header */
+#header{
+    width: 100%;
+}
+
+#header .container{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#header .logo-header{
+    width: 25%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+#header .logo-header a{
+    color: rgb(4, 161, 140);
+}
+
+#header .menu{
+    width: 60%;
+}
+
+#header .nav{
+    display: flex;
+}
+
+#header .nav li a{
+    color: rgb(105, 105, 105);
+    padding: 0 10px 0 30px;
+    text-transform: uppercase;
+}
+
+#header .nav li a:hover{
+    color: #000;
+}
+#header .sidebar-top{
+    width: 15%;
+}
+#header .sidebar-top a{
+    padding: 0 10px;
+}
+#header .sidebar-top a:hover{
+    opacity: 0.8;
+}
+
+/* Slider */
+#slider .slide-item{
+    position: relative;
+}
+.slide-item h2{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #333;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.slide-item h2 small{
+    display: block;
+    color: rgb(4, 161, 140);
+}
+#slider img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* best-seller */
+#best-seller.container{
+    /* display: block; */
+    width: 100%;
+    margin-top: 60px;
+}
+.container .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.container .product-list li{
+    width: 20%;
+    position: relative;
+    margin-bottom: 45px;
+}
+.container li img{
+    max-width: 220px;
+    /* padding: 0 20px; */
+}
+.container li img:hover{
+    opacity: 0.8;
+}
+.container li a{
+    color: #333;
+    font-size: 17px;
+}
+.container li a:hover{
+    opacity: 0.7;
+}
+.container li p{
+    color: rgb(4, 161, 140);
+    font-size: 15px;
+    margin-top: 10px;
+}
+.container li.item-1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 20px;
+} 
+.container li.item-1 h2{
+    text-transform: uppercase;
+    color: #333;
+}
+.container li.item-1 small.item-1-sub-heading{
+    color: rgb(4, 161, 140);
+}
+.container li.item-1 p.item-1-about{
+    opacity: 0.6;
+    font-size: 10px;
+    color: #333;
+    margin-top: 10px;
+    max-width: 200px;
+}
+.container .product-list li .buy{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+}
+.container li .buy a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    background:rgb(4, 161, 140) url(/Thuc-hanh-Flexbox/img/buy.png) no-repeat;
+    margin-bottom: 5px;
+    display: none;
+}
+.container li:hover .buy a{
+    display: block;
+}
+.container li .buy a:nth-child(1){
+    background-position: 1px 5px ;
+}
+.container li .buy a:nth-child(2){
+    background-position: 1px -45px ;
+}
+.container li .buy a:nth-child(3){
+    background-position: 1px -95px ;
+}
+
+/* shipping */
+#shipping{
+    background-color: rgb(240, 239, 239);
+    padding: 50px 0 ;
+}
+#shipping ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#shipping ul li{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+#shipping ul li small{
+    opacity: 0.7;
+}
+
+/* promotion */
+#promotion{
+    background-color: rgb(35, 10, 77);
+}
+#promotion ul{
+    display: flex;
+    justify-content: space-between;
+}
+#promotion ul li{
+    width: 33.33333%;
+    text-align: center;
+    display: block;
+    padding: 40px 0;
+}
+#promotion ul li:nth-child(2){
+    background-color: rgb(43, 15, 92);
+}
+#promotion ul li img{
+    width: 60%;
+}
+
+/* feature-product */
+#feature-product{
+    margin: 40px 0;
+}
+#feature-product h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+#feature-product small{
+    text-align: center;
+    display: block;
+    color: rgb(4, 161, 140);
+    margin: 10px 0 30px ;
+}
+#feature-product .product-list{
+    padding-left: 20px;
+}
+
+/* Discount & Brand-icon */
+
+/* #brands{
+    display: flex;
+    width: 100%;
+}
+.discount,.brands-icon{
+    width: 50%;
+    height: 250px;
+} */
+
+#brands .discount{
+    width: 100%;
+    height: 250px;
+    background: rgb(53, 3, 139) url(/Thuc-hanh-Flexbox/img/bgform.jpg)top center / cover no-repeat;
+    text-align: center;
+}
+.discount .text {
+    /* margin: 50px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    color: #fff;
+}
+.discount .text h2{
+    text-transform: uppercase;
+    font-size: 205x;
+}
+.discount .text p{
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.discount .text input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.discount .text button {
+    width: 125px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(4, 161, 140);
+}
+.discount .text button:hover{
+    opacity: .8;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    justify-content: space-between;
+    color: #c5c3c3;
+    text-align: center;
+    line-height: 60px;
+    font-size: 11px;
+}
+
+
+
+
